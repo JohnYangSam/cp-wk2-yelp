@@ -167,10 +167,13 @@ class MainViewController: UIViewController, UISearchBarDelegate, UITableViewDele
         return results.count
     }
     
-    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "MainToFilter") {
+            let navigationVC = segue.destinationViewController as! UINavigationController
+            let filtersVC = navigationVC.viewControllers[0] as! FiltersViewController
+            filtersVC.delegate = self
+        }
     }
-    */
-    
+
 }
 

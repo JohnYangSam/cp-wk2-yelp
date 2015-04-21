@@ -128,7 +128,7 @@
                     <navigationItem key="navigationItem" title="Search" id="Jwb-dn-r87">
                         <barButtonItem key="leftBarButtonItem" title="Filter" id="lCF-DM-LUg">
                             <connections>
-                                <segue destination="JZa-Hy-gMp" kind="modal" id="r1a-V4-Mzd"/>
+                                <segue destination="JZa-Hy-gMp" kind="modal" identifier="MainToFilter" id="r1a-V4-Mzd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -170,7 +170,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Filter" id="8ES-MZ-Eyj">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CB3-Ws-nES"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CB3-Ws-nES">
+                            <connections>
+                                <action selector="onCancelButtonPressed:" destination="NHN-B2-1QT" id="8ha-ha-k3Z"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Search" id="JYG-Mi-xie">
                             <connections>
                                 <action selector="onSearchButtonPressed:" destination="NHN-B2-1QT" id="w46-9a-z1O"/>
