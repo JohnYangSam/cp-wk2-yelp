@@ -31,7 +31,8 @@ Time spent: `~14`
 
 ### Walkthrough
 
-![Video Walkthrough](...)
+![Video
+Walkthrough](https://raw.githubusercontent.com/JohnYangSam/cp-wk2-yelp/master/YelpDemo.gif)
 
 
 ### Notes
