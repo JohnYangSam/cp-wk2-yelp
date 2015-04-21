@@ -128,7 +128,7 @@
                     <navigationItem key="navigationItem" title="Search" id="Jwb-dn-r87">
                         <barButtonItem key="leftBarButtonItem" title="Filter" id="lCF-DM-LUg">
                             <connections>
-                                <segue destination="e6x-An-h8s" kind="modal" id="5g8-RN-k7F"/>
+                                <segue destination="JZa-Hy-gMp" kind="modal" id="r1a-V4-Mzd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -142,54 +142,49 @@
             </objects>
             <point key="canvasLocation" x="658" y="291"/>
         </scene>
-        <!--Filters-->
-        <scene sceneID="2uO-64-JrU">
+        <!--Filter-->
+        <scene sceneID="hbw-z5-Nzs">
             <objects>
-                <viewController id="Zoy-aT-ag2" customClass="FiltersViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NHN-B2-1QT" customClass="FiltersViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jTx-AZ-932"/>
-                        <viewControllerLayoutGuide type="bottom" id="sjo-XF-J9A"/>
+                        <viewControllerLayoutGuide type="top" id="zn9-gg-Vhu"/>
+                        <viewControllerLayoutGuide type="bottom" id="p64-2s-map"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x56-ce-7Bb">
+                    <view key="view" contentMode="scaleToFill" id="ep2-kc-I7i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBv-pU-wyE">
-                                <rect key="frame" x="278" y="174" width="51" height="31"/>
-                                <connections>
-                                    <action selector="onSwitchChanged:" destination="Zoy-aT-ag2" eventType="valueChanged" id="1FK-yT-qr6"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvc-He-z54">
-                                <rect key="frame" x="92" y="179" width="43" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kj-f9-rUa">
+                                <rect key="frame" x="81" y="195" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dcd-VR-7yt">
+                                <rect key="frame" x="247" y="190" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onDealSwitchChanged:" destination="NHN-B2-1QT" eventType="valueChanged" id="1Ho-j7-c9o"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Filters" id="fW9-7H-XRc">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="4d0-x5-1uv">
+                    <navigationItem key="navigationItem" title="Filter" id="8ES-MZ-Eyj">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CB3-Ws-nES"/>
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="JYG-Mi-xie">
                             <connections>
-                                <action selector="onCancelButtonPressed:" destination="Zoy-aT-ag2" id="8VE-TW-9bG"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Search" id="o3u-pT-qwp">
-                            <connections>
-                                <action selector="onSearchButtonPressed:" destination="Zoy-aT-ag2" id="GwT-zi-rrM"/>
+                                <action selector="onSearchButtonPressed:" destination="NHN-B2-1QT" id="w46-9a-z1O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="dealSwitch" destination="FBv-pU-wyE" id="7jT-6z-zDw"/>
-                        <outlet property="filterButton" destination="o3u-pT-qwp" id="ajO-yO-acS"/>
+                        <outlet property="dealSwitch" destination="Dcd-VR-7yt" id="96M-Dk-nLQ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1cD-mM-iK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awP-1V-Y8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1775" y="291"/>
+            <point key="canvasLocation" x="1902" y="285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M0k-oK-5Sz">
@@ -211,23 +206,23 @@
             <point key="canvasLocation" x="172" y="291"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="SSh-uc-8rD">
+        <scene sceneID="OCs-jv-p7u">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e6x-An-h8s" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JZa-Hy-gMp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dqk-zO-cUU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uNn-N9-7a2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Zoy-aT-ag2" kind="relationship" relationship="rootViewController" id="H9f-BA-BUT"/>
+                        <segue destination="NHN-B2-1QT" kind="relationship" relationship="rootViewController" id="58t-qa-IJb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A6o-Uo-XZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idt-Wp-2cF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="291"/>
+            <point key="canvasLocation" x="1334" y="291"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

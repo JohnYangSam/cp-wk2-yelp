@@ -43,22 +43,19 @@ class FiltersViewController: UIViewController /*, UITableViewDataSource, UITable
         // Dispose of any resources that can be recreated.
     }
     
-    // Update switch variable on switch
-    @IBAction func onSwitchChanged(sender: AnyObject) {
-        deals = dealSwitch.on
-    }
-
     @IBAction func onCancelButtonPressed(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    // Update switch variable on switch
+    @IBAction func onDealSwitchChanged(sender: UISwitch) {
+        deals = dealSwitch.on
+    }
     
-    @IBAction func onSearchButtonPressed(sender: UIBarButtonItem) {
         // would normally need to set up everything here
-        
+    @IBAction func onSearchButtonPressed(sender: UIBarButtonItem) {
         delegate.addSearchFilter(self, category: categories, sort: sort, radius: distance, deals: deals)
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
     
     /*
