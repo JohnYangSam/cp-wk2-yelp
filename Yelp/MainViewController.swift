@@ -168,7 +168,8 @@ class MainViewController: UIViewController, UISearchBarDelegate, UITableViewDele
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "MainToFilter") {
+        
+        if (segue.identifier == "MainToFilters") {
             let navigationVC = segue.destinationViewController as! UINavigationController
             let filtersVC = navigationVC.viewControllers[0] as! FiltersViewController
             filtersVC.delegate = self

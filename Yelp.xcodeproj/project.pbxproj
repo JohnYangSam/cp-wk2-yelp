@@ -17,6 +17,7 @@
 		222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A7C19CCFAE000D2DB53 /* YelpClient.swift */; };
 		F711CD021AE5FEE700AC929E /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F711CD011AE5FEE700AC929E /* FiltersViewController.swift */; };
 		F711CD091AE6372500AC929E /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F711CD081AE6372500AC929E /* ResultCell.swift */; };
+		F711CD0B1AE702C200AC929E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F711CD0A1AE702C200AC929E /* RadioButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C56EF0CE844A4EE5819C72AF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F711CD011AE5FEE700AC929E /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		F711CD081AE6372500AC929E /* ResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		F711CD0A1AE702C200AC929E /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		F711CD071AE636F900AC929E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F711CD0A1AE702C200AC929E /* RadioButton.swift */,
 				F711CD081AE6372500AC929E /* ResultCell.swift */,
 			);
 			name = Views;
@@ -309,6 +312,7 @@
 				222D8A5D19CCF9F900D2DB53 /* MainViewController.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
 				F711CD021AE5FEE700AC929E /* FiltersViewController.swift in Sources */,
+				F711CD0B1AE702C200AC929E /* RadioButton.swift in Sources */,
 				F711CD091AE6372500AC929E /* ResultCell.swift in Sources */,
 				222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */,
 			);

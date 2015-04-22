@@ -31,12 +31,16 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         var params = NSDictionary()
         if (radius == -1) {
             // Hard code Stanford location
-            params = ["term": term, "ll": "37.4225,-122.1653", "cateogry_filter": category, "sort": sort, "deals_filter": deals]
+            params = ["term": term, "ll": "37.4225,-122.1653", "category_filter": category, "sort": sort, "deals_filter": deals]
         }
         else {
             var meters = radius * 1609
-            params = ["term": term, "ll": "37.4225,-122.1653", "cateogry_filter": category, "sort": sort, "deals_filter": deals, "raidus": meters]
+            params = ["term": term, "ll": "37.4225,-122.1653", "category_filter": category, "sort": sort, "deals_filter": deals, "raidus": meters]
         }
+        
+        // Debugging
+        println(params)
+        
         return self.GET("search", parameters: params, success: success, failure: failure)
     }
 }
